@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #e9ebec;
+  --primary-active-btn-bg: #fbd144;
+  --primary-inactive-btn-bg: #ffffff;
+  --primary-text-color: #3d3d3d;
+  --theme-btn-bg: #fff;
+  font-size: 16px;
+}
+
+:root.dark {
+  --primary-bg-color: #0c151d;
+  --primary-text-color: #f1f2f4;
+  --theme-btn-bg: #171f26;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: "Poppins", serif;
+  transition: background-color 300ms ease-in-out;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+}
+
+header svg {
+  background-color: var(--theme-btn-bg);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
+  height: 60vh;
+}
+main .main-left {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 4px solid var(--primary-active-btn-bg);
+}
+.main-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+main .main-right ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2vw;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  color: var(--primary-text-color);
+}
+.main-right p:first-child {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
